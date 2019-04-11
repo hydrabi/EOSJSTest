@@ -1,0 +1,1035 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		462E79EF54172E6B1AC4ED8A /* Pods_EOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD8E3E2694AAEA138CDC273F /* Pods_EOSTest.framework */; };
+		888E61712227C05A00239142 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E61702227C05A00239142 /* AppDelegate.m */; };
+		888E61742227C05A00239142 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E61732227C05A00239142 /* ViewController.m */; };
+		888E61772227C05A00239142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888E61752227C05A00239142 /* Main.storyboard */; };
+		888E61792227C05C00239142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888E61782227C05C00239142 /* Assets.xcassets */; };
+		888E617C2227C05C00239142 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888E617A2227C05C00239142 /* LaunchScreen.storyboard */; };
+		888E617F2227C05C00239142 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E617E2227C05C00239142 /* main.m */; };
+		888E61892227C05C00239142 /* EOSTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E61882227C05C00239142 /* EOSTestTests.m */; };
+		888E61942227C05C00239142 /* EOSTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E61932227C05C00239142 /* EOSTestUITests.m */; };
+		888E62572227C57600239142 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E621C2227C57600239142 /* AESCrypt.m */; };
+		888E62582227C57600239142 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E621E2227C57600239142 /* Base64.m */; };
+		888E62592227C57600239142 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62202227C57600239142 /* NSData+CommonCrypto.m */; };
+		888E625A2227C57600239142 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62222227C57600239142 /* NSObject+Extension.m */; };
+		888E625B2227C57600239142 /* PBKDF2.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62242227C57600239142 /* PBKDF2.m */; };
+		888E625C2227C57600239142 /* client.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 888E62262227C57600239142 /* client.p12 */; };
+		888E625D2227C57600239142 /* server.cer in Resources */ = {isa = PBXBuildFile; fileRef = 888E62272227C57600239142 /* server.cer */; };
+		888E625E2227C57600239142 /* base58.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E62292227C57600239142 /* base58.c */; };
+		888E625F2227C57600239142 /* rmd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E622D2227C57600239142 /* rmd160.c */; };
+		888E62602227C57600239142 /* sha2.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E622F2227C57600239142 /* sha2.c */; };
+		888E62612227C57600239142 /* sha3.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E62312227C57600239142 /* sha3.c */; };
+		888E62622227C57600239142 /* uECC.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E62332227C57600239142 /* uECC.c */; };
+		888E62632227C57600239142 /* EcDsa.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62372227C57600239142 /* EcDsa.m */; };
+		888E62642227C57600239142 /* EOS_Key_Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62392227C57600239142 /* EOS_Key_Encode.m */; };
+		888E62662227C57600239142 /* EosPrivateKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E623D2227C57600239142 /* EosPrivateKey.m */; };
+		888E62672227C57600239142 /* Sha256.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E623F2227C57600239142 /* Sha256.m */; };
+		888E62682227C57600239142 /* TypeChainId.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62412227C57600239142 /* TypeChainId.m */; };
+		888E62692227C57600239142 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62442227C57600239142 /* NSString+Hash.m */; };
+		888E626A2227C57600239142 /* Eos.js in Resources */ = {isa = PBXBuildFile; fileRef = 888E62462227C57600239142 /* Eos.js */; };
+		888E626B2227C57600239142 /* Javascript.html in Resources */ = {isa = PBXBuildFile; fileRef = 888E62472227C57600239142 /* Javascript.html */; };
+		888E626E2227C57600239142 /* JKBigDecimal.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E624F2227C57600239142 /* JKBigDecimal.m */; };
+		888E626F2227C57600239142 /* JKBigInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E62512227C57600239142 /* JKBigInteger.m */; };
+		888E62702227C57600239142 /* tommath.c in Sources */ = {isa = PBXBuildFile; fileRef = 888E62532227C57600239142 /* tommath.c */; };
+		889DE2BD2229002700B90322 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DE2BC2229002700B90322 /* test.swift */; };
+		889DE2C02229014E00B90322 /* OCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 889DE2BF2229014E00B90322 /* OCTest.m */; };
+		889DE2C8222904C200B90322 /* EOSTestSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DE2C7222904C200B90322 /* EOSTestSwiftTests.swift */; };
+		889DE2D1222912EF00B90322 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889DE2BC2229002700B90322 /* test.swift */; };
+		88D9962C225DE1C000CCFFD3 /* EOSWeb in Resources */ = {isa = PBXBuildFile; fileRef = 88D9962B225DE1C000CCFFD3 /* EOSWeb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		888E61852227C05C00239142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888E61642227C05A00239142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888E616B2227C05A00239142;
+			remoteInfo = EOSTest;
+		};
+		888E61902227C05C00239142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888E61642227C05A00239142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888E616B2227C05A00239142;
+			remoteInfo = EOSTest;
+		};
+		889DE2CA222904C200B90322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 888E61642227C05A00239142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 888E616B2227C05A00239142;
+			remoteInfo = EOSTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D3637E362BD5F762E16B681 /* Pods-EOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOSTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EOSTest/Pods-EOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		888E616C2227C05A00239142 /* EOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		888E616F2227C05A00239142 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		888E61702227C05A00239142 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		888E61722227C05A00239142 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		888E61732227C05A00239142 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		888E61762227C05A00239142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		888E61782227C05C00239142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		888E617B2227C05C00239142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		888E617D2227C05C00239142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888E617E2227C05C00239142 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		888E61842227C05C00239142 /* EOSTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOSTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		888E61882227C05C00239142 /* EOSTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOSTestTests.m; sourceTree = "<group>"; };
+		888E618A2227C05C00239142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888E618F2227C05C00239142 /* EOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		888E61932227C05C00239142 /* EOSTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOSTestUITests.m; sourceTree = "<group>"; };
+		888E61952227C05C00239142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		888E621B2227C57600239142 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		888E621C2227C57600239142 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		888E621D2227C57600239142 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		888E621E2227C57600239142 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		888E621F2227C57600239142 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		888E62202227C57600239142 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		888E62212227C57600239142 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		888E62222227C57600239142 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		888E62232227C57600239142 /* PBKDF2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBKDF2.h; sourceTree = "<group>"; };
+		888E62242227C57600239142 /* PBKDF2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBKDF2.m; sourceTree = "<group>"; };
+		888E62262227C57600239142 /* client.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = client.p12; sourceTree = "<group>"; };
+		888E62272227C57600239142 /* server.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = server.cer; sourceTree = "<group>"; };
+		888E62292227C57600239142 /* base58.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base58.c; sourceTree = "<group>"; };
+		888E622A2227C57600239142 /* libbase58.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libbase58.h; sourceTree = "<group>"; };
+		888E622B2227C57600239142 /* macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		888E622C2227C57600239142 /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		888E622D2227C57600239142 /* rmd160.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rmd160.c; sourceTree = "<group>"; };
+		888E622E2227C57600239142 /* rmd160.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmd160.h; sourceTree = "<group>"; };
+		888E622F2227C57600239142 /* sha2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha2.c; sourceTree = "<group>"; };
+		888E62302227C57600239142 /* sha2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha2.h; sourceTree = "<group>"; };
+		888E62312227C57600239142 /* sha3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha3.c; sourceTree = "<group>"; };
+		888E62322227C57600239142 /* sha3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
+		888E62332227C57600239142 /* uECC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uECC.c; sourceTree = "<group>"; };
+		888E62342227C57600239142 /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
+		888E62362227C57600239142 /* EcDsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcDsa.h; sourceTree = "<group>"; };
+		888E62372227C57600239142 /* EcDsa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcDsa.m; sourceTree = "<group>"; };
+		888E62382227C57600239142 /* EOS_Key_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOS_Key_Encode.h; sourceTree = "<group>"; };
+		888E62392227C57600239142 /* EOS_Key_Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOS_Key_Encode.m; sourceTree = "<group>"; };
+		888E623C2227C57600239142 /* EosPrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EosPrivateKey.h; sourceTree = "<group>"; };
+		888E623D2227C57600239142 /* EosPrivateKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EosPrivateKey.m; sourceTree = "<group>"; };
+		888E623E2227C57600239142 /* Sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha256.h; sourceTree = "<group>"; };
+		888E623F2227C57600239142 /* Sha256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sha256.m; sourceTree = "<group>"; };
+		888E62402227C57600239142 /* TypeChainId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeChainId.h; sourceTree = "<group>"; };
+		888E62412227C57600239142 /* TypeChainId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeChainId.m; sourceTree = "<group>"; };
+		888E62432227C57600239142 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		888E62442227C57600239142 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		888E62462227C57600239142 /* Eos.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Eos.js; sourceTree = "<group>"; };
+		888E62472227C57600239142 /* Javascript.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Javascript.html; sourceTree = "<group>"; };
+		888E624E2227C57600239142 /* JKBigDecimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigDecimal.h; sourceTree = "<group>"; };
+		888E624F2227C57600239142 /* JKBigDecimal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigDecimal.m; sourceTree = "<group>"; };
+		888E62502227C57600239142 /* JKBigInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKBigInteger.h; sourceTree = "<group>"; };
+		888E62512227C57600239142 /* JKBigInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKBigInteger.m; sourceTree = "<group>"; };
+		888E62532227C57600239142 /* tommath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tommath.c; sourceTree = "<group>"; };
+		888E62542227C57600239142 /* tommath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath.h; sourceTree = "<group>"; };
+		888E62552227C57600239142 /* tommath_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_class.h; sourceTree = "<group>"; };
+		888E62562227C57600239142 /* tommath_superclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tommath_superclass.h; sourceTree = "<group>"; };
+		889DE2BB2229002600B90322 /* EOSTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EOSTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		889DE2BC2229002700B90322 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		889DE2BE2229014E00B90322 /* OCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTest.h; sourceTree = "<group>"; };
+		889DE2BF2229014E00B90322 /* OCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTest.m; sourceTree = "<group>"; };
+		889DE2C5222904C200B90322 /* EOSTestSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EOSTestSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		889DE2C7222904C200B90322 /* EOSTestSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOSTestSwiftTests.swift; sourceTree = "<group>"; };
+		889DE2C9222904C200B90322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D9962B225DE1C000CCFFD3 /* EOSWeb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EOSWeb; sourceTree = "<group>"; };
+		FD8E3E2694AAEA138CDC273F /* Pods_EOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFAA879E5817D733C754B68D /* Pods-EOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EOSTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EOSTest/Pods-EOSTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		888E61692227C05A00239142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				462E79EF54172E6B1AC4ED8A /* Pods_EOSTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E61812227C05C00239142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E618C2227C05C00239142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889DE2C2222904C200B90322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C0E0CCC7D88BD51CCA162AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD8E3E2694AAEA138CDC273F /* Pods_EOSTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75598F893777BD9167EFDF60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D3637E362BD5F762E16B681 /* Pods-EOSTest.debug.xcconfig */,
+				FFAA879E5817D733C754B68D /* Pods-EOSTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		888E61632227C05A00239142 = {
+			isa = PBXGroup;
+			children = (
+				888E616E2227C05A00239142 /* EOSTest */,
+				888E61872227C05C00239142 /* EOSTestTests */,
+				888E61922227C05C00239142 /* EOSTestUITests */,
+				889DE2C6222904C200B90322 /* EOSTestSwiftTests */,
+				888E616D2227C05A00239142 /* Products */,
+				75598F893777BD9167EFDF60 /* Pods */,
+				4C0E0CCC7D88BD51CCA162AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		888E616D2227C05A00239142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				888E616C2227C05A00239142 /* EOSTest.app */,
+				888E61842227C05C00239142 /* EOSTestTests.xctest */,
+				888E618F2227C05C00239142 /* EOSTestUITests.xctest */,
+				889DE2C5222904C200B90322 /* EOSTestSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		888E616E2227C05A00239142 /* EOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				88D9962B225DE1C000CCFFD3 /* EOSWeb */,
+				888E62192227C57600239142 /* SecureModule */,
+				888E616F2227C05A00239142 /* AppDelegate.h */,
+				888E61702227C05A00239142 /* AppDelegate.m */,
+				888E61722227C05A00239142 /* ViewController.h */,
+				888E61732227C05A00239142 /* ViewController.m */,
+				888E61752227C05A00239142 /* Main.storyboard */,
+				888E61782227C05C00239142 /* Assets.xcassets */,
+				888E617A2227C05C00239142 /* LaunchScreen.storyboard */,
+				888E617D2227C05C00239142 /* Info.plist */,
+				888E617E2227C05C00239142 /* main.m */,
+				889DE2BC2229002700B90322 /* test.swift */,
+				889DE2BB2229002600B90322 /* EOSTest-Bridging-Header.h */,
+				889DE2BE2229014E00B90322 /* OCTest.h */,
+				889DE2BF2229014E00B90322 /* OCTest.m */,
+			);
+			path = EOSTest;
+			sourceTree = "<group>";
+		};
+		888E61872227C05C00239142 /* EOSTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				888E61882227C05C00239142 /* EOSTestTests.m */,
+				888E618A2227C05C00239142 /* Info.plist */,
+			);
+			path = EOSTestTests;
+			sourceTree = "<group>";
+		};
+		888E61922227C05C00239142 /* EOSTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				888E61932227C05C00239142 /* EOSTestUITests.m */,
+				888E61952227C05C00239142 /* Info.plist */,
+			);
+			path = EOSTestUITests;
+			sourceTree = "<group>";
+		};
+		888E62192227C57600239142 /* SecureModule */ = {
+			isa = PBXGroup;
+			children = (
+				888E621A2227C57600239142 /* AESCrypt */,
+				888E62252227C57600239142 /* Certificate */,
+				888E62282227C57600239142 /* Crypto */,
+				888E62352227C57600239142 /* EC */,
+				888E62422227C57600239142 /* Hash */,
+				888E62452227C57600239142 /* JavascriptFile */,
+				888E624D2227C57600239142 /* JKBigInteger */,
+			);
+			path = SecureModule;
+			sourceTree = "<group>";
+		};
+		888E621A2227C57600239142 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				888E621B2227C57600239142 /* AESCrypt.h */,
+				888E621C2227C57600239142 /* AESCrypt.m */,
+				888E621D2227C57600239142 /* Base64.h */,
+				888E621E2227C57600239142 /* Base64.m */,
+				888E621F2227C57600239142 /* NSData+CommonCrypto.h */,
+				888E62202227C57600239142 /* NSData+CommonCrypto.m */,
+				888E62212227C57600239142 /* NSObject+Extension.h */,
+				888E62222227C57600239142 /* NSObject+Extension.m */,
+				888E62232227C57600239142 /* PBKDF2.h */,
+				888E62242227C57600239142 /* PBKDF2.m */,
+			);
+			path = AESCrypt;
+			sourceTree = "<group>";
+		};
+		888E62252227C57600239142 /* Certificate */ = {
+			isa = PBXGroup;
+			children = (
+				888E62262227C57600239142 /* client.p12 */,
+				888E62272227C57600239142 /* server.cer */,
+			);
+			path = Certificate;
+			sourceTree = "<group>";
+		};
+		888E62282227C57600239142 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				888E62292227C57600239142 /* base58.c */,
+				888E622A2227C57600239142 /* libbase58.h */,
+				888E622B2227C57600239142 /* macros.h */,
+				888E622C2227C57600239142 /* options.h */,
+				888E622D2227C57600239142 /* rmd160.c */,
+				888E622E2227C57600239142 /* rmd160.h */,
+				888E622F2227C57600239142 /* sha2.c */,
+				888E62302227C57600239142 /* sha2.h */,
+				888E62312227C57600239142 /* sha3.c */,
+				888E62322227C57600239142 /* sha3.h */,
+				888E62332227C57600239142 /* uECC.c */,
+				888E62342227C57600239142 /* uECC.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		888E62352227C57600239142 /* EC */ = {
+			isa = PBXGroup;
+			children = (
+				888E62362227C57600239142 /* EcDsa.h */,
+				888E62372227C57600239142 /* EcDsa.m */,
+				888E62382227C57600239142 /* EOS_Key_Encode.h */,
+				888E62392227C57600239142 /* EOS_Key_Encode.m */,
+				888E623C2227C57600239142 /* EosPrivateKey.h */,
+				888E623D2227C57600239142 /* EosPrivateKey.m */,
+				888E623E2227C57600239142 /* Sha256.h */,
+				888E623F2227C57600239142 /* Sha256.m */,
+				888E62402227C57600239142 /* TypeChainId.h */,
+				888E62412227C57600239142 /* TypeChainId.m */,
+			);
+			path = EC;
+			sourceTree = "<group>";
+		};
+		888E62422227C57600239142 /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				888E62432227C57600239142 /* NSString+Hash.h */,
+				888E62442227C57600239142 /* NSString+Hash.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		888E62452227C57600239142 /* JavascriptFile */ = {
+			isa = PBXGroup;
+			children = (
+				888E62462227C57600239142 /* Eos.js */,
+				888E62472227C57600239142 /* Javascript.html */,
+			);
+			path = JavascriptFile;
+			sourceTree = "<group>";
+		};
+		888E624D2227C57600239142 /* JKBigInteger */ = {
+			isa = PBXGroup;
+			children = (
+				888E624E2227C57600239142 /* JKBigDecimal.h */,
+				888E624F2227C57600239142 /* JKBigDecimal.m */,
+				888E62502227C57600239142 /* JKBigInteger.h */,
+				888E62512227C57600239142 /* JKBigInteger.m */,
+				888E62522227C57600239142 /* LibTomMath */,
+			);
+			path = JKBigInteger;
+			sourceTree = "<group>";
+		};
+		888E62522227C57600239142 /* LibTomMath */ = {
+			isa = PBXGroup;
+			children = (
+				888E62532227C57600239142 /* tommath.c */,
+				888E62542227C57600239142 /* tommath.h */,
+				888E62552227C57600239142 /* tommath_class.h */,
+				888E62562227C57600239142 /* tommath_superclass.h */,
+			);
+			path = LibTomMath;
+			sourceTree = "<group>";
+		};
+		889DE2C6222904C200B90322 /* EOSTestSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				889DE2C7222904C200B90322 /* EOSTestSwiftTests.swift */,
+				889DE2C9222904C200B90322 /* Info.plist */,
+			);
+			path = EOSTestSwiftTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		888E616B2227C05A00239142 /* EOSTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888E61982227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTest" */;
+			buildPhases = (
+				E09B38D9D34510ABA326A12C /* [CP] Check Pods Manifest.lock */,
+				888E61682227C05A00239142 /* Sources */,
+				888E61692227C05A00239142 /* Frameworks */,
+				888E616A2227C05A00239142 /* Resources */,
+				BF97EDD2E82765504C1858F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EOSTest;
+			productName = EOSTest;
+			productReference = 888E616C2227C05A00239142 /* EOSTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		888E61832227C05C00239142 /* EOSTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888E619B2227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTestTests" */;
+			buildPhases = (
+				888E61802227C05C00239142 /* Sources */,
+				888E61812227C05C00239142 /* Frameworks */,
+				888E61822227C05C00239142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				888E61862227C05C00239142 /* PBXTargetDependency */,
+			);
+			name = EOSTestTests;
+			productName = EOSTestTests;
+			productReference = 888E61842227C05C00239142 /* EOSTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		888E618E2227C05C00239142 /* EOSTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 888E619E2227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTestUITests" */;
+			buildPhases = (
+				888E618B2227C05C00239142 /* Sources */,
+				888E618C2227C05C00239142 /* Frameworks */,
+				888E618D2227C05C00239142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				888E61912227C05C00239142 /* PBXTargetDependency */,
+			);
+			name = EOSTestUITests;
+			productName = EOSTestUITests;
+			productReference = 888E618F2227C05C00239142 /* EOSTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		889DE2C4222904C200B90322 /* EOSTestSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 889DE2CC222904C200B90322 /* Build configuration list for PBXNativeTarget "EOSTestSwiftTests" */;
+			buildPhases = (
+				889DE2C1222904C200B90322 /* Sources */,
+				889DE2C2222904C200B90322 /* Frameworks */,
+				889DE2C3222904C200B90322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				889DE2CB222904C200B90322 /* PBXTargetDependency */,
+			);
+			name = EOSTestSwiftTests;
+			productName = EOSTestSwiftTests;
+			productReference = 889DE2C5222904C200B90322 /* EOSTestSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		888E61642227C05A00239142 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = iMac;
+				TargetAttributes = {
+					888E616B2227C05A00239142 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					888E61832227C05C00239142 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 888E616B2227C05A00239142;
+					};
+					888E618E2227C05C00239142 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 888E616B2227C05A00239142;
+					};
+					889DE2C4222904C200B90322 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 888E616B2227C05A00239142;
+					};
+				};
+			};
+			buildConfigurationList = 888E61672227C05A00239142 /* Build configuration list for PBXProject "EOSTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 888E61632227C05A00239142;
+			productRefGroup = 888E616D2227C05A00239142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				888E616B2227C05A00239142 /* EOSTest */,
+				888E61832227C05C00239142 /* EOSTestTests */,
+				888E618E2227C05C00239142 /* EOSTestUITests */,
+				889DE2C4222904C200B90322 /* EOSTestSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		888E616A2227C05A00239142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888E626A2227C57600239142 /* Eos.js in Resources */,
+				888E626B2227C57600239142 /* Javascript.html in Resources */,
+				888E617C2227C05C00239142 /* LaunchScreen.storyboard in Resources */,
+				88D9962C225DE1C000CCFFD3 /* EOSWeb in Resources */,
+				888E61792227C05C00239142 /* Assets.xcassets in Resources */,
+				888E625C2227C57600239142 /* client.p12 in Resources */,
+				888E625D2227C57600239142 /* server.cer in Resources */,
+				888E61772227C05A00239142 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E61822227C05C00239142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E618D2227C05C00239142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889DE2C3222904C200B90322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF97EDD2E82765504C1858F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EOSTest/Pods-EOSTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EOSTest/Pods-EOSTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09B38D9D34510ABA326A12C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EOSTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		888E61682227C05A00239142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888E62622227C57600239142 /* uECC.c in Sources */,
+				888E62572227C57600239142 /* AESCrypt.m in Sources */,
+				888E62602227C57600239142 /* sha2.c in Sources */,
+				888E62662227C57600239142 /* EosPrivateKey.m in Sources */,
+				888E62582227C57600239142 /* Base64.m in Sources */,
+				888E62592227C57600239142 /* NSData+CommonCrypto.m in Sources */,
+				888E625F2227C57600239142 /* rmd160.c in Sources */,
+				889DE2BD2229002700B90322 /* test.swift in Sources */,
+				888E61742227C05A00239142 /* ViewController.m in Sources */,
+				888E625B2227C57600239142 /* PBKDF2.m in Sources */,
+				888E62702227C57600239142 /* tommath.c in Sources */,
+				888E626E2227C57600239142 /* JKBigDecimal.m in Sources */,
+				888E62672227C57600239142 /* Sha256.m in Sources */,
+				889DE2C02229014E00B90322 /* OCTest.m in Sources */,
+				888E625E2227C57600239142 /* base58.c in Sources */,
+				888E62642227C57600239142 /* EOS_Key_Encode.m in Sources */,
+				888E62692227C57600239142 /* NSString+Hash.m in Sources */,
+				888E617F2227C05C00239142 /* main.m in Sources */,
+				888E62682227C57600239142 /* TypeChainId.m in Sources */,
+				888E62632227C57600239142 /* EcDsa.m in Sources */,
+				888E625A2227C57600239142 /* NSObject+Extension.m in Sources */,
+				888E62612227C57600239142 /* sha3.c in Sources */,
+				888E626F2227C57600239142 /* JKBigInteger.m in Sources */,
+				888E61712227C05A00239142 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E61802227C05C00239142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888E61892227C05C00239142 /* EOSTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		888E618B2227C05C00239142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				888E61942227C05C00239142 /* EOSTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		889DE2C1222904C200B90322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				889DE2C8222904C200B90322 /* EOSTestSwiftTests.swift in Sources */,
+				889DE2D1222912EF00B90322 /* test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		888E61862227C05C00239142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888E616B2227C05A00239142 /* EOSTest */;
+			targetProxy = 888E61852227C05C00239142 /* PBXContainerItemProxy */;
+		};
+		888E61912227C05C00239142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888E616B2227C05A00239142 /* EOSTest */;
+			targetProxy = 888E61902227C05C00239142 /* PBXContainerItemProxy */;
+		};
+		889DE2CB222904C200B90322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 888E616B2227C05A00239142 /* EOSTest */;
+			targetProxy = 889DE2CA222904C200B90322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		888E61752227C05A00239142 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888E61762227C05A00239142 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		888E617A2227C05C00239142 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				888E617B2227C05C00239142 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		888E61962227C05C00239142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = EOSTest;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		888E61972227C05C00239142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_MODULE_NAME = EOSTest;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		888E61992227C05C00239142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D3637E362BD5F762E16B681 /* Pods-EOSTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				INFOPLIST_FILE = EOSTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EOSTest/EOSTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		888E619A2227C05C00239142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFAA879E5817D733C754B68D /* Pods-EOSTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				INFOPLIST_FILE = EOSTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EOSTest/EOSTest-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		888E619C2227C05C00239142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/EOSTest.build/DerivedSources;
+				INFOPLIST_FILE = EOSTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOSTest.app/EOSTest";
+			};
+			name = Debug;
+		};
+		888E619D2227C05C00239142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/EOSTest.build/DerivedSources;
+				INFOPLIST_FILE = EOSTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOSTest.app/EOSTest";
+			};
+			name = Release;
+		};
+		888E619F2227C05C00239142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				INFOPLIST_FILE = EOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EOSTest;
+			};
+			name = Debug;
+		};
+		888E61A02227C05C00239142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				INFOPLIST_FILE = EOSTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EOSTest;
+			};
+			name = Release;
+		};
+		889DE2CD222904C200B90322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/EOSTest.build/DerivedSources;
+				INFOPLIST_FILE = EOSTestSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOSTest.app/EOSTest";
+			};
+			name = Debug;
+		};
+		889DE2CE222904C200B90322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4ZFX22UBQA;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/EOSTest.build/DerivedSources;
+				INFOPLIST_FILE = EOSTestSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ted.EOSTestSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EOSTest.app/EOSTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		888E61672227C05A00239142 /* Build configuration list for PBXProject "EOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888E61962227C05C00239142 /* Debug */,
+				888E61972227C05C00239142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888E61982227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888E61992227C05C00239142 /* Debug */,
+				888E619A2227C05C00239142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888E619B2227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888E619C2227C05C00239142 /* Debug */,
+				888E619D2227C05C00239142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		888E619E2227C05C00239142 /* Build configuration list for PBXNativeTarget "EOSTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				888E619F2227C05C00239142 /* Debug */,
+				888E61A02227C05C00239142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		889DE2CC222904C200B90322 /* Build configuration list for PBXNativeTarget "EOSTestSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				889DE2CD222904C200B90322 /* Debug */,
+				889DE2CE222904C200B90322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 888E61642227C05A00239142 /* Project object */;
+}
